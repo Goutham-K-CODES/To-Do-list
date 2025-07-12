@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Full-screen section with animated hue background */
+
 section {
   display: flex;
   justify-content: center;
@@ -23,7 +23,7 @@ section {
   }
 }
 
-/* Glassmorphic Container */
+
 .login-box {
   width: 450px;
   padding: 40px;
@@ -36,14 +36,14 @@ section {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-/* Title */
+
 h2 {
   font-size: 2.5em;
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Input field container */
+
 .input-box {
   position: relative;
   width: 100%;
@@ -79,7 +79,7 @@ h2 {
   color: #ffeb3b;
 }
 
-/* Add Button */
+
 button {
   width: 100%;
   padding: 12px;
@@ -98,7 +98,7 @@ button:hover {
   background: #00cccc;
 }
 
-/* Task List */
+
 ul {
   list-style: none;
   padding: 0;
@@ -124,13 +124,13 @@ li {
   border: 1px solid #ff4d4d;
   color: #ff4d4d;
   
-  padding: 4px 8px;           /* small padding for compact size */
+  padding: 4px 8px;           
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1em;           /* smaller font */
+  font-size: 1em;          
   flex-shrink: 0;
   text-align: center;
-  width: fit-content;         /* limits width to content */
+  width: fit-content;        
   line-height: 1;
   transition: all 0.3s ease;
 }
