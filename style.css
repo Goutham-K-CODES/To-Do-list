@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Full-screen section with animated hue background */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url('bg.jpg') no-repeat center center/cover;
+  animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Glassmorphic Container */
+.login-box {
+  width: 450px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Title */
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input field container */
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+  font-size: 0.9em;
+  color: #ffeb3b;
+}
+
+/* Add Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #00e6e6;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00cccc;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 1em;
+}
+
+
+.delete-btn {
+  background: transparent;
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  
+  padding: 4px 8px;           /* small padding for compact size */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;           /* smaller font */
+  flex-shrink: 0;
+  text-align: center;
+  width: fit-content;         /* limits width to content */
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #ff4d4d;
+  color: white;
+}
+
+
+
